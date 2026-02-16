@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TravelBloom - Explore Your Next Destination</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./travel_recommendation.css">
 </head>
 <body>
@@ -23,18 +25,35 @@
         <div class="search-container">
             <div class="search-input-wrapper">
                 <input type="text" id="conditionInput" placeholder="Enter a destination or keyword">
-                <button id="btnSearch" class="search-icon-btn">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                </button>
+                <i class="fa fa-search search-icon"></i>
             </div>
-            <button id="btnSearchAction" class="btn-action">Search</button>
+            <button id="btnSearch" class="btn-action">Search</button>
             <button id="btnReset" class="btn-clear">Clear</button>
         </div>
     </nav>
 
-    <main id="main-content">
+    <section class="hero-section">
+        <div class="social-sidebar">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+
+        <div class="hero-content">
+            <div class="headline-box">
+                <h1>DISCOVER<br>IMAGINE<br>JOURNEY</h1>
+            </div>
+            
+            <div class="description-box">
+                <p>It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destination that captivates the heart and ignites a sense of wonder.</p>
+            </div>
+
+            <button class="book-now-btn">BOOK NOW</button>
+        </div>
+
         <div id="result-presentation"></div>
-    </main>
+    </section>
 
     <script src="./travel_recommendation.js"></script>
 </body>

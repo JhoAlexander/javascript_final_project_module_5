@@ -3,25 +3,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-body {
-    background-color: #1a1a1a; /* Dark background as seen in the image */
+body, html {
+    height: 100%;
+    width: 100%;
     color: white;
 }
 
-/* Navbar container */
+/* Navbar Style */
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 40px;
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent dark overlay */
-    border-bottom: 1px solid #333;
+    padding: 15px 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
-/* Logo and Brand */
 .nav-left {
     display: flex;
     align-items: center;
@@ -29,82 +31,170 @@ body {
 }
 
 .logo-img {
-    height: 40px;
+    height: 45px;
     width: auto;
-    filter: invert(1); /* Ensures the logo is white if it was dark */
+    /* Optional: filter: brightness(0) invert(1); if the logo is black */
 }
 
 .brand-name {
-    font-size: 1.5rem;
-    font-weight: bold;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
     font-style: italic;
 }
 
-/* Navigation Links */
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 40px;
 }
 
 .nav-links a {
     text-decoration: none;
     color: white;
-    font-weight: 600;
-    transition: color 0.3s;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: 0.3s;
 }
 
 .nav-links a:hover {
-    color: #008080; /* Teal hover effect */
+    color: #008080;
 }
 
-/* Search Bar Area */
+/* Search Bar (Capsule Style) */
 .search-container {
     display: flex;
+    gap: 12px;
     align-items: center;
-    gap: 10px;
 }
 
 .search-input-wrapper {
     background: white;
+    border-radius: 30px;
     display: flex;
     align-items: center;
-    border-radius: 25px; /* Rounded capsule look */
-    padding: 5px 15px;
+    padding: 5px 20px;
 }
 
 #conditionInput {
     border: none;
     outline: none;
-    padding: 8px;
-    width: 250px;
+    width: 220px;
     color: #008080;
-    font-size: 0.9rem;
+    padding: 5px;
 }
 
-.search-icon-btn {
-    background: none;
-    border: none;
+.search-icon {
     color: #008080;
-    cursor: pointer;
+    font-size: 1.1rem;
 }
 
-/* Teal Buttons */
 .btn-action, .btn-clear {
     background-color: #008080;
     color: white;
     border: none;
-    padding: 8px 20px;
+    padding: 10px 22px;
     border-radius: 8px;
     cursor: pointer;
-    font-weight: bold;
-    transition: background 0.3s;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
-.btn-action:hover, .btn-clear:hover {
+.btn-action:hover {
     background-color: #006666;
 }
 
-.btn-clear {
-    background-color: #006666; /* Slightly darker teal for "Clear" */
+.btn-clear:hover {
+    background-color: #004d4d;
+}
+
+/* Hero Section Style */
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('./fondo_playa.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    position: relative;
+}
+
+/* Social Sidebar */
+.social-sidebar {
+    position: absolute;
+    left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 1.3rem;
+}
+
+.social-sidebar a {
+    color: white;
+    transition: 0.3s;
+}
+
+.social-sidebar a:hover {
+    color: #008080;
+}
+
+/* Red-Bordered Boxes from Sample */
+.hero-content {
+    max-width: 650px;
+}
+
+.headline-box {
+    border: 4px solid #ff4d4d; /* Red border */
+    padding: 25px;
+    margin-bottom: 25px;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.headline-box h1 {
+    font-size: 4.8rem;
+    line-height: 1.1;
+    letter-spacing: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.description-box {
+    border: 2px solid #ff4d4d; /* Thinner red border */
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    margin-bottom: 35px;
+    max-width: 550px;
+}
+
+.description-box p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Book Now Button */
+.book-now-btn {
+    background-color: #008080;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.book-now-btn:hover {
+    background-color: #005a5a;
+    transform: scale(1.05);
+}
+
+/* Results Area (Placeholder) */
+#result-presentation {
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    width: 300px;
 }
