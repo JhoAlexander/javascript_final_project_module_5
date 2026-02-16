@@ -257,3 +257,92 @@ body, html {
 #result-presentation {
     margin-top: 30px;
 }
+
+/* --- CONTACT US PAGE SPECIFIC --- */
+.contact-section {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('./fondo_playa.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    padding: 100px 10% 50px 10%;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    gap: 50px;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-title {
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.get-in-touch {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+}
+
+/* Red Border Form Styling */
+.contact-form-box {
+    flex: 1;
+    border: 2px solid #ff4d4d;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    max-width: 600px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: white;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: #008080;
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: #008080;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #006666;
+}
