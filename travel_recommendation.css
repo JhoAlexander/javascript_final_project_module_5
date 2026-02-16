@@ -109,7 +109,7 @@ body, html {
 /* --- SHARED LAYOUT (Background & Sidebar) --- */
 .hero-section, .about-section, .contact-section {
     min-height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('./fondo_playa.jpg');
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/fondo_playa.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
