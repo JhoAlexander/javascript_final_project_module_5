@@ -11,7 +11,7 @@
           },
           {
             "name": "Melbourne, Australia",
-            "imageUrl": "MMelbourne.jpg",
+            "imageUrl": "Melbourne.jpg",
             "description": "A cultural hub famous for its art, food, and diverse neighborhoods."
           }
         ]
@@ -67,7 +67,7 @@
       {
         "id": 1,
         "name": "Bora Bora, French Polynesia",
-        "imageUrl": "Bora_bora_French Polynesia.jpg",
+        "imageUrl": "Bora_Bora_French_Polynesia.jpg",
         "description": "An island known for its stunning turquoise waters and luxurious overwater bungalows."
       },
       {
