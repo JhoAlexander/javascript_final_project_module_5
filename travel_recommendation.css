@@ -1,0 +1,110 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #1a1a1a; /* Dark background as seen in the image */
+    color: white;
+}
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent dark overlay */
+    border-bottom: 1px solid #333;
+}
+
+/* Logo and Brand */
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+    filter: invert(1); /* Ensures the logo is white if it was dark */
+}
+
+.brand-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #008080; /* Teal hover effect */
+}
+
+/* Search Bar Area */
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-input-wrapper {
+    background: white;
+    display: flex;
+    align-items: center;
+    border-radius: 25px; /* Rounded capsule look */
+    padding: 5px 15px;
+}
+
+#conditionInput {
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 250px;
+    color: #008080;
+    font-size: 0.9rem;
+}
+
+.search-icon-btn {
+    background: none;
+    border: none;
+    color: #008080;
+    cursor: pointer;
+}
+
+/* Teal Buttons */
+.btn-action, .btn-clear {
+    background-color: #008080;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-action:hover, .btn-clear:hover {
+    background-color: #006666;
+}
+
+.btn-clear {
+    background-color: #006666; /* Slightly darker teal for "Clear" */
+}
